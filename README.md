@@ -23,3 +23,8 @@ Currently available:
 16. [rs601_HLFactoryexample.py](rs601_HLFactoryexample.py) 'High Level Factory Example' RooStats tutorial macro #601
 17. [rs602_HLFactoryCombinationexample.py](rs602_HLFactoryCombinationexample.py) 'High Level Factory Example' RooStats tutorial macro #602
 18. [rs603_HLFactoryElaborateExample.py](rs603_HLFactoryElaborateExample.py) 'High Level Factory Example' RooStats tutorial macro #602
+19. [rs701_BayesianCalculator.py](rs701_BayesianCalculator.py) 'Bayesian Calculator' RooStats tutorial macro #701
+20. [rs801_HypoTestInverter.py](rs801_HypoTestInverter.py) 'Hypothesis Test Inversion' RooStats tutorial macro #801
+21. [rs_bernsteinCorrection.py](rs_bernsteinCorrection.py) 'Bernstein Correction' RooStats tutorial macro
+22. [rs_numberCountingCombination.py](rs_numberCountingCombination.py) 'Number Counting Example' RooStats tutorial macro #100
+23. [rs_numbercountingutils.py](rs_numbercountingutils.py) 'Number Counting Utils' RooStats tutorial
