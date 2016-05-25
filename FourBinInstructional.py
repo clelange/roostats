@@ -129,16 +129,13 @@ def FourBinInstructional(doBayesian=False, doFeldmanCousins=False, doMCMC=False)
 
     # make model
     wspace = ROOT.RooWorkspace("wspace")
-    wspace.factory(
-      "Poisson::on(non[0,1000], sum::splusb(s[40,0,100],b[100,0,300]))")
-    wspace.factory(
-      "Poisson::off(noff[0,5000], prod::taub(b,tau[5,3,7],rho[1,0,2]))")
+    wspace.factory("Poisson::on(non[0,1000], sum::splusb(s[40,0,100],b[100,0,300]))")
+    wspace.factory("Poisson::off(noff[0,5000], prod::taub(b,tau[5,3,7],rho[1,0,2]))")
     wspace.factory("Poisson::onbar(nonbar[0,10000], bbar[1000,500,2000])")
-    wspace.factory(
-      "Poisson::offbar(noffbar[0,1000000], prod::lambdaoffbar(bbar, tau))")
+    wspace.factory("Poisson::offbar(noffbar[0,1000000], prod::lambdaoffbar(bbar, tau))")
     wspace.factory("Gaussian::mcCons(rhonom[1.,0,2], rho, sigma[.2])")
     wspace.factory("PROD::model(on,off,onbar,offbar,mcCons)")
-    wspace.defineSet("obs", "non,noff,nonbar,noffbar,rhonom")
+    wspace.defineSet("obs","non,noff,nonbar,noffbar,rhonom")
 
     wspace.factory("Uniform::prior_poi({s})")
     wspace.factory("Uniform::prior_nuis({b,bbar,tau, rho})")
@@ -205,7 +202,7 @@ def FourBinInstructional(doBayesian=False, doFeldmanCousins=False, doMCMC=False)
     fc.SetNBins(40)
     fcInt = 0
     if(doFeldmanCousins):  # takes 7 minutes
-        mcInt = fc.GetInterval()  # fix cast
+        fcInt = fc.GetInterval()  # fix cast
 
     # use BayesianCalculator (only 1-d parameter of interest, for self problem)
     bc = ROOT.RooStats.BayesianCalculator(data, modelConfig)
@@ -259,7 +256,7 @@ def FourBinInstructional(doBayesian=False, doFeldmanCousins=False, doMCMC=False)
         c1.cd(2)
         # the plot takes a long time and print lots of error
         # using a scan it is better
-        c1.SetScanOfPosterior(20)
+        bc.SetScanOfPosterior(20)
         plot = bc.GetPosteriorPlot()
         plot.Draw()
 
@@ -292,4 +289,4 @@ def FourBinInstructional(doBayesian=False, doFeldmanCousins=False, doMCMC=False)
 
 
 if __name__ == "__main__":
-    FourBinInstructional()
+    FourBinInstructional(False, False, False)
