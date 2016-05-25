@@ -69,7 +69,7 @@ def rs401d_FeldmanCousins(doFeldmanCousins=False, doMCMC=True):
         "PnmuTone", "P(#nu_{#mu} #rightarrow #nu_{e}", L, E, deltaMSq)
 
     # only E is observable, create the signal model by integrating out L
-    sigModel = PnmuTone.createProjection(L)
+    sigModel = PnmuTone.createProjection(ROOT.RooArgSet(L))
 
     # create   \int dE' dL' P(E',L' | \Delta m^2).
     # Given ROOT.RooFit will renormalize the PDF in the range of the observables,
@@ -103,7 +103,7 @@ def rs401d_FeldmanCousins(doFeldmanCousins=False, doMCMC=True):
 
     # sigNorm = maxEventsTot * (\int dE dL prob to oscillate in experiment /
     # Area) * sin^2(2\theta)
-    sigNorm = ROOT.RooProduct("sigNorm", "", ROOT.RooArgSet(
+    sigNorm = ROOT.RooProduct("sigNorm", "", ROOT.RooArgList(
         maxEventsTot, intProbToOscInExp, inverseArea, sinSq2theta))
     # bkg = 5 bins * 100 events / bin
     bkgNorm = ROOT.RooConstVar("bkgNorm", "normalization for background", 500)
@@ -281,6 +281,8 @@ def rs401d_FeldmanCousins(doFeldmanCousins=False, doMCMC=True):
     else:
         plotInt.Draw()
     dataCanvas.Update()
+
+    dataCanvas.SaveAs("rs401d_FeldmanCousins.png")
 
     # / print timing info
     t.Stop()
