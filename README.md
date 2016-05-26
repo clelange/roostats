@@ -29,3 +29,24 @@ Currently available:
 22. [rs_numberCountingCombination.py](rs_numberCountingCombination.py) 'Number Counting Example' RooStats tutorial macro #100
 23. [rs_numbercountingutils.py](rs_numbercountingutils.py) 'Number Counting Utils' RooStats tutorial
 24. [FourBinInstructional.py](FourBinInstructional.py) 'FourBin Instructional Tutorial - generalization of the on/off problem'
+25. ~~[HybridInstructional.py](HybridInstructional.py]~~
+26. ~~[HybridOriginalDemo.py](HybridOriginalDemo.py]~~
+27. ~~[HybridStandardForm.py](HybridStandardForm.py]~~
+28. ~~[IntervalExamples.py](IntervalExamples.py]~~
+29. ~~[JeffreysPriorDemo.py](JeffreysPriorDemo.py]~~
+30. ~~[ModelInspector.py](ModelInspector.py]~~
+31. ~~[MultivariateGaussianTest.py](MultivariateGaussianTest.py]~~
+32. ~~[OneSidedFrequentistUpperLimitWithBands.py](OneSidedFrequentistUpperLimitWithBands.py]~~
+33. ~~[StandardBayesianMCMCDemo.py](StandardBayesianMCMCDemo.py]~~
+34. ~~[StandardBayesianNumericalDemo.py](StandardBayesianNumericalDemo.py]~~
+35. ~~[StandardFeldmanCousinsDemo.py](StandardFeldmanCousinsDemo.py]~~
+36. ~~[StandardFrequentistDiscovery.py](StandardFrequentistDiscovery.py]~~
+37. ~~[StandardHistFactoryPlotsWithCategories.py](StandardHistFactoryPlotsWithCategories.py]~~
+38. ~~[StandardHypoTestDemo.py](.StandardHypoTestDemopy]~~
+39. ~~[StandardHypoTestInvDemo.py](StandardHypoTestInvDemo.py]~~
+40. ~~[StandardProfileInspectorDemo.py](StandardProfileInspectorDemo.py]~~
+41. ~~[StandardProfileLikelihoodDemo.py](StandardProfileLikelihoodDemo.py]~~
+42. ~~[StandardTestStatDistributionDemo.py](StandardTestStatDistributionDemo.py]~~
+43. ~~[TestNonCentral.py](TestNonCentral.py]~~
+44. ~~[TwoSidedFrequentistUpperLimitWithBands.py](TwoSidedFrequentistUpperLimitWithBands.py]~~
+46. ~~[Zbi_Zgamma.py](Zbi_Zgamma.py]~~
