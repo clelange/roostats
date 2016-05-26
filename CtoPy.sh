@@ -88,6 +88,7 @@ sed -i '.bak' 's/ROOT.RooDecay decay_gm/decay_gm = ROOT.RooDecay/g' ${FILE}
 sed -i '.bak' 's/ROOT.RooLandau pdfDtErr/pdfDtErr = ROOT.RooLandau/g' ${FILE}
 sed -i '.bak' "s/w.import/getattr(w, 'import')/g" ${FILE}
 sed -i '.bak' "s/wks.import/getattr(wks, 'import')/g" ${FILE}
+sed -i '.bak' "s/ws.import/getattr(ws, 'import')/g" ${FILE}
 sed -i '.bak' "s/wspace.import/getattr(wspace, 'import')/g" ${FILE}
 sed -i '.bak' 's/ROOT.RooRealVar m(/m = ROOT.RooRealVar(/g' ${FILE}
 sed -i '.bak' 's/ROOT.RooRealVar a(/a = ROOT.RooRealVar(/g' ${FILE}

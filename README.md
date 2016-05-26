@@ -28,3 +28,4 @@ Currently available:
 21. [rs_bernsteinCorrection.py](rs_bernsteinCorrection.py) 'Bernstein Correction' RooStats tutorial macro
 22. [rs_numberCountingCombination.py](rs_numberCountingCombination.py) 'Number Counting Example' RooStats tutorial macro #100
 23. [rs_numbercountingutils.py](rs_numbercountingutils.py) 'Number Counting Utils' RooStats tutorial
+24. [FourBinInstructional.py](FourBinInstructional.py) 'FourBin Instructional Tutorial - generalization of the on/off problem'
